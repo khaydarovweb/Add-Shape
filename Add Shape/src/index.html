@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Add Shape</title>
+	<style>
+		* {
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+		body {
+			height: 100vh;
+			width: 100%;
+			background-color: aliceblue;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.top {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			padding: 20px;
+		}
+
+		.top input,
+		.top select,
+		.top button {
+			padding: 15px;
+			outline: 0px;
+			border: 0px;
+			background-color: #fff;
+			border-radius: 10px;
+			font-size: 14px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.top button:active {
+			background-color: rgb(91, 165, 255);
+			color: #fff;
+			transform: scale(0.95);
+		}
+
+		.bottom {
+			background-color: #fff;
+			width: 90%;
+			border-radius: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			align-items: center;
+			padding: 50px;
+		}
+
+		.square {
+			width: 150px;
+			height: 150px;
+			background: red;
+		}
+
+		.round {
+			width: 150px;
+			height: 150px;
+			background: red;
+			border-radius: 50%
+		}
+
+
+		.triangle {
+			width: 0;
+			height: 0;
+			border-left: 70px solid transparent;
+			border-right: 70px solid transparent;
+			border-bottom: 150px solid transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top">
+		<input type="text" placeholder="Enter Number" required>
+		<select>
+			<option value="square">Square</option>
+			<option value="triangle">Triangle</option>
+			<option value="round">Round</option>
+		</select>
+		<button>ADD</button>
+	</div>
+	<div class="bottom"></div>
+</body>
+
+</html>
